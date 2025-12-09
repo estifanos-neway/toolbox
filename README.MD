@@ -13,8 +13,9 @@ This repository, **toolbox**, is a collection of reusable tools, scripts, and re
 - **DynamoDB/**: Scripts for initializing and running DynamoDB (NoSQL database service).
 - **MinIO/**: Scripts for initializing and running MinIO (S3-compatible object storage).
 - **MongoDB/**: Scripts for initializing and running MongoDB.
-- **PostgreSQL/**: Scripts for initializing and running PostgreSQL.
-- **Scripts/**: Reserved for additional general-purpose scripts and utilities.
+- **PostgreSQL-17/**: Scripts for initializing and running PostgreSQL version 17.
+- **SSH-Bastion/**: SSH configuration templates for bastion host connections.
+- **Scripts/**: General-purpose scripts and utilities, including SwiftBar scripts for macOS menu bar.
 
 > **toolbox** is not limited to databases—add any tool, script, or resource that can be reused across projects and devices!
 

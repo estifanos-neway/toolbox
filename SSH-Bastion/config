@@ -1,0 +1,10 @@
+Host rds-tunnel
+  HostName <public-ip-of-the-bastion-server>
+  User <remote-user>
+  IdentityFile <pem-file-location>
+  LocalForward <port> <remote-host>:<remote-port>
+
+Host bastion-staging
+  HostName <public-ip-of-the-bastion-server>
+  User <remote-user>
+  IdentityFile <pem-file-location>
