@@ -11,6 +11,7 @@ This repository, **toolbox**, is a collection of reusable tools, scripts, and re
 ## Current Contents
 
 - **DynamoDB/**: Scripts for initializing and running DynamoDB (NoSQL database service).
+- **LocalStack/**: Docker Compose setup for LocalStack with S3 and AWS Secrets Manager services, including automatic initialization scripts.
 - **MinIO/**: Scripts for initializing and running MinIO (S3-compatible object storage).
 - **MongoDB/**: Scripts for initializing and running MongoDB.
 - **PostgreSQL-17/**: Scripts for initializing and running PostgreSQL version 17.

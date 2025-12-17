@@ -1,0 +1,22 @@
+services:
+  localstack:
+    image: localstack/localstack:latest
+    container_name: localstack-1
+    restart: unless-stopped
+    ports:
+      - "4666:4566"
+      - "4610-4659:4510-4559"
+    environment:
+      - SERVICES=s3,secretsmanager
+      - DEBUG=${DEBUG:-0}
+      - DATA_DIR=${DATA_DIR:-/tmp/localstack/data}
+    volumes:
+      - localstack-data:/var/lib/localstack
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./setup.sh:/etc/localstack/init/ready.d/script.sh
+      - ./secrets:/opt/code/localstack/secrets
+    # env_file: # uncomment this to use environment variables
+    #   - .env
+
+volumes:
+  localstack-data:
