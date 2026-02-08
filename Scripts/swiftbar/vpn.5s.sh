@@ -15,7 +15,7 @@
 # <swiftbar.hideSwiftBar>false</swiftbar.hideSwiftBar>
 
 # Configuration
-VPN_SCRIPT="$HOME/Documents/vpn.py"
+VPN_SCRIPT="/Users/estifanosneway/Documents/Projects/tool-box/Scripts/swiftbar/vpn.py"
 PID_FILE="$HOME/.vpn_script.pid"
 
 # Check if the VPN script is running
